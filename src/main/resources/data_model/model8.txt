@@ -1,0 +1,140 @@
+Sure, here are the classes and properties for the hospital management system schema with details:
+
+Class: Patient
+Properties:
+
+Patient ID (integer)
+First Name (string)
+Last Name (string)
+Date of Birth (date)
+Gender (string)
+Phone Number (string)
+Email Address (string)
+Address (string)
+Blood Type (string)
+Height (float)
+Weight (float)
+Emergency Contact Name (string)
+Emergency Contact Phone Number (string)
+Insurance ID (integer) - reference to Insurance table
+Notes (string)
+Class: Doctor
+Properties:
+
+Doctor ID (integer)
+First Name (string)
+Last Name (string)
+Date of Birth (date)
+Gender (string)
+Phone Number (string)
+Email Address (string)
+Address (string)
+Medical Specialty (string)
+Medical License Number (string)
+Notes (string)
+Class: Staff
+Properties:
+
+Staff ID (integer)
+First Name (string)
+Last Name (string)
+Date of Birth (date)
+Gender (string)
+Phone Number (string)
+Email Address (string)
+Address (string)
+Staff Role (string)
+Hire Date (date)
+Salary (float)
+Notes (string)
+Class: Appointment
+Properties:
+
+Appointment ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Appointment Date (date)
+Appointment Time (time)
+Appointment Description (string)
+Appointment Status (string)
+Notes (string)
+Class: Billing
+Properties:
+
+Billing ID (integer)
+Patient ID (integer) - reference to Patient table
+Billing Date (date)
+Billing Time (time)
+Billing Amount (float)
+Billing Status (string)
+Billing Description (string)
+Notes (string)
+Class: Prescription
+Properties:
+
+Prescription ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Prescription Date (date)
+Prescription Time (time)
+Prescription Description (string)
+Notes (string)
+Class: LabTest
+Properties:
+
+LabTest ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+LabTest Date (date)
+LabTest Time (time)
+LabTest Type (string)
+LabTest Result (string)
+LabTest Status (string)
+LabTest Description (string)
+Notes (string)
+Class: Insurance
+Properties:
+
+Insurance ID (integer)
+Insurance Name (string)
+Insurance Type (string)
+Insurance Phone Number (string)
+Insurance Email Address (string)
+Insurance Description (string)
+Notes (string)
+Class: Claim
+Properties:
+
+Claim ID (integer)
+Patient ID (integer) - reference to Patient table
+Insurance ID (integer) - reference to Insurance table
+Claim Date (date)
+Claim Time (time)
+Claim Amount (float)
+Claim Status (string)
+Claim Description (string)
+Notes (string)
+Class: Pharmacy
+Properties:
+
+Pharmacy ID (integer)
+Pharmacy Name (string)
+Pharmacy Type (string)
+Pharmacy Address (string)
+Pharmacy Phone Number (string)
+Pharmacy Email Address (string)
+Pharmacy Description (string)
+Notes (string)
+Class: Medication
+Properties:
+
+Medication ID (integer)
+Medication Name (string)
+Medication Type (string)
+Medication Description (string)
+Notes (string)
+Class: MedicationOrder
+Properties:
+
+Medication Order ID (integer)
+Patient ID (

@@ -1,0 +1,59 @@
+Here is an example schema for a hospital management system:
+
+Class: Patient
+Properties:
+
+Name (string)
+Age (integer)
+Gender (string)
+Contact Information (string)
+Medical History (string)
+Current Condition (string)
+Class: Doctor
+Properties:
+
+Name (string)
+Specialty (string)
+Contact Information (string)
+Availability (string)
+Class: Appointment
+Properties:
+
+Patient (Patient)
+Doctor (Doctor)
+Date (date)
+Time (time)
+Reason (string)
+Class: Prescription
+Properties:
+
+Patient (Patient)
+Doctor (Doctor)
+Medication (string)
+Dosage (string)
+Frequency (string)
+Duration (string)
+Class: Staff
+Properties:
+
+Name (string)
+Position (string)
+Contact Information (string)
+Class: Department
+Properties:
+
+Name (string)
+Staff (list of Staff)
+Class: Ward
+Properties:
+
+Name (string)
+Capacity (integer)
+Current Patients (list of Patient)
+Class: Billing
+Properties:
+
+Patient (Patient)
+Total Cost (float)
+Payment Status (string)
+In this schema, the classes represent the different entities in the hospital management system, and the properties represent the attributes or characteristics of each entity. For example, the Patient class has properties like Name, Age, and Medical History, while the Appointment class has properties like Patient, Doctor, and Date.

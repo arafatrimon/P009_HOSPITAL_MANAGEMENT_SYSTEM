@@ -1,0 +1,286 @@
+Sure, here are the classes and properties for the hospital management system schema with details:
+
+Class: Patient
+Properties:
+
+Patient ID (integer)
+First Name (string)
+Last Name (string)
+Date of Birth (date)
+Gender (string)
+Phone Number (string)
+Email Address (string)
+Address (string)
+Blood Type (string)
+Height (float)
+Weight (float)
+Emergency Contact Name (string)
+Emergency Contact Phone Number (string)
+Insurance ID (integer) - reference to Insurance table
+Notes (string)
+Class: Doctor
+Properties:
+
+Doctor ID (integer)
+First Name (string)
+Last Name (string)
+Date of Birth (date)
+Gender (string)
+Phone Number (string)
+Email Address (string)
+Address (string)
+Medical Specialty (string)
+Medical License Number (string)
+Notes (string)
+Class: Staff
+Properties:
+
+Staff ID (integer)
+First Name (string)
+Last Name (string)
+Date of Birth (date)
+Gender (string)
+Phone Number (string)
+Email Address (string)
+Address (string)
+Staff Role (string)
+Hire Date (date)
+Salary (float)
+Notes (string)
+Class: Appointment
+Properties:
+
+Appointment ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Appointment Date (date)
+Appointment Time (time)
+Appointment Description (string)
+Appointment Status (string)
+Notes (string)
+Class: Billing
+Properties:
+
+Billing ID (integer)
+Patient ID (integer) - reference to Patient table
+Billing Date (date)
+Billing Time (time)
+Billing Amount (float)
+Billing Status (string)
+Billing Description (string)
+Notes (string)
+Class: Prescription
+Properties:
+
+Prescription ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Prescription Date (date)
+Prescription Time (time)
+Prescription Description (string)
+Notes (string)
+Class: LabTest
+Properties:
+
+LabTest ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+LabTest Date (date)
+LabTest Time (time)
+LabTest Type (string)
+LabTest Result (string)
+LabTest Status (string)
+LabTest Description (string)
+Notes (string)
+Class: Insurance
+Properties:
+
+Insurance ID (integer)
+Insurance Name (string)
+Insurance Type (string)
+Insurance Phone Number (string)
+Insurance Email Address (string)
+Insurance Description (string)
+Notes (string)
+Class: Claim
+Properties:
+
+Claim ID (integer)
+Patient ID (integer) - reference to Patient table
+Insurance ID (integer) - reference to Insurance table
+Claim Date (date)
+Claim Time (time)
+Claim Amount (float)
+Claim Status (string)
+Claim Description (string)
+Notes (string)
+Class: Pharmacy
+Properties:
+
+Pharmacy ID (integer)
+Pharmacy Name (string)
+Pharmacy Type (string)
+Pharmacy Address (string)
+Pharmacy Phone Number (string)
+Pharmacy Email Address (string)
+Pharmacy Description (string)
+Notes (string)
+Class: Medication
+Properties:
+
+Medication ID (integer)
+Medication Name (string)
+Medication Type (string)
+Medication Description (string)
+Notes (string)
+Class: MedicationOrder
+Properties:
+
+Medication Order ID (integer)
+Patient ID (
+
+2 / 2
+
+integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Pharmacy ID (integer) - reference to Pharmacy table
+Medication ID (integer) - reference to Medication table
+Order Date (date)
+Order Time (time)
+Order Quantity (integer)
+Order Status (string)
+Notes (string)
+
+Additionally, here are some more classes and properties for the hospital management system schema:
+
+Class: Surgery
+Properties:
+
+Surgery ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Surgery Date (date)
+Surgery Time (time)
+Surgery Type (string)
+Surgery Description (string)
+Surgery Status (string)
+Notes (string)
+Class: Room
+Properties:
+
+Room ID (integer)
+Room Number (string)
+Room Type (string)
+Room Availability (string)
+Notes (string)
+Class: Admission
+Properties:
+
+Admission ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Admission Date (date)
+Admission Time (time)
+Discharge Date (date)
+Discharge Time (time)
+Room ID (integer) - reference to Room table
+Admission Status (string)
+Notes (string)
+Class: Equipment
+Properties:
+
+Equipment ID (integer)
+Equipment Name (string)
+Equipment Type (string)
+Equipment Availability (string)
+Notes (string)
+Class: Inventory
+Properties:
+
+Inventory ID (integer)
+Inventory Name (string)
+Inventory Type (string)
+Inventory Quantity (integer)
+Inventory Price (float)
+Inventory Supplier Name (string)
+Inventory Supplier Phone Number (string)
+Inventory Supplier Email Address (string)
+Notes (string)
+
+Sure, here are some additional classes and properties for the hospital management system schema:
+
+Class: Ward
+Properties:
+
+Ward ID (integer)
+Ward Name (string)
+Ward Type (string)
+Number of Beds (integer)
+Notes (string)
+
+Class: Bed
+Properties:
+
+Bed ID (integer)
+Ward ID (integer) - reference to Ward table
+Bed Number (integer)
+Bed Status (string)
+Notes (string)
+
+Class: Surgery
+Properties:
+
+Surgery ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Surgery Date (date)
+Surgery Time (time)
+Surgery Type (string)
+Surgery Description (string)
+Surgery Status (string)
+Notes (string)
+
+Class: DiagnosticImaging
+Properties:
+
+Diagnostic Imaging ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Diagnostic Imaging Date (date)
+Diagnostic Imaging Time (time)
+Diagnostic Imaging Type (string)
+Diagnostic Imaging Result (string)
+Diagnostic Imaging Description (string)
+Notes (string)
+
+Class: AppointmentType
+Properties:
+
+Appointment Type ID (integer)
+Appointment Type Name (string)
+Appointment Type Duration (integer)
+Notes (string)
+
+Class: Room
+Properties:
+
+Room ID (integer)
+Room Number (integer)
+Room Type (string)
+Room Capacity (integer)
+Notes (string)
+
+Class: Discharge
+Properties:
+
+Discharge ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Discharge Date (date)
+Discharge Time (time)
+Discharge Reason (string)
+Discharge Destination (string)
+Notes (string)
+
+
+

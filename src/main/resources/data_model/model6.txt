@@ -1,0 +1,63 @@
+Certainly, here are even more tables and properties for a hospital management system:
+
+Class: Billing
+Properties:
+
+Billing ID (integer)
+Patient ID (integer)
+Billing Date (date)
+Billing Time (time)
+Billing Amount (float)
+Payment Status (string)
+Payment Method (string)
+Notes (string)
+Class: Prescription
+Properties:
+
+Prescription ID (integer)
+Patient ID (integer)
+Doctor ID (integer)
+Prescription Date (date)
+Prescription Time (time)
+Prescription Description (string)
+Medication (string)
+Dosage (string)
+Frequency (string)
+Start Date (date)
+End Date (date)
+Notes (string)
+Class: LabTest
+Properties:
+
+Lab Test ID (integer)
+Patient ID (integer)
+Doctor ID (integer)
+Lab Test Type (string)
+Lab Test Date (date)
+Lab Test Time (time)
+Lab Test Result (string)
+Lab Test Description (string)
+Notes (string)
+Class: Appointment
+Properties:
+
+Appointment ID (integer)
+Patient ID (integer)
+Doctor ID (integer)
+Appointment Date (date)
+Appointment Time (time)
+Appointment Type (string)
+Appointment Status (string)
+Appointment Description (string)
+Notes (string)
+Class: Staff
+Properties:
+
+Staff ID (integer)
+Staff Name (string)
+Staff Type (string)
+Staff Department (string)
+Staff Phone Number (string)
+Staff Email Address (string)
+Notes (string)
+In this expanded schema, we have added more tables and properties to capture additional information about billing, prescriptions, lab tests, appointments, and staff. For example, the Billing table includes properties like Billing Amount, Payment Status, and Payment Method, while the Prescription table includes properties like Medication, Dosage, and Frequency. The LabTest table includes properties like Lab Test Result and Lab Test Description, while the Appointment table includes properties like Appointment Type and Appointment Status. The Staff table includes properties like Staff Type and Staff Department. These tables and properties help ensure that all relevant information is captured and easily accessible for healthcare professionals in the hospital management system.

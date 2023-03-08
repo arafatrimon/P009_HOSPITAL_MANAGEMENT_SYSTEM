@@ -1,0 +1,97 @@
+Sure, here are some additional classes and properties for the hospital management system schema:
+
+Class: Surgery
+Properties:
+
+Surgery ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Surgery Date (date)
+Surgery Time (time)
+Surgery Type (string)
+Surgery Description (string)
+Surgery Status (string)
+Notes (string)
+
+Class: MedicalRecord
+Properties:
+
+Medical Record ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Record Date (date)
+Record Time (time)
+Record Type (string)
+Record Description (string)
+Notes (string)
+
+Class: Ward
+Properties:
+
+Ward ID (integer)
+Ward Name (string)
+Ward Type (string)
+Ward Description (string)
+Notes (string)
+
+Class: Bed
+Properties:
+
+Bed ID (integer)
+Ward ID (integer) - reference to Ward table
+Bed Number (integer)
+Bed Status (string)
+Notes (string)
+
+Class: Nurse
+Properties:
+
+Nurse ID (integer)
+First Name (string)
+Last Name (string)
+Date of Birth (date)
+Gender (string)
+Phone Number (string)
+Email Address (string)
+Address (string)
+Nursing Specialty (string)
+Nursing License Number (string)
+Notes (string)
+
+Class: NursingSchedule
+Properties:
+
+Nursing Schedule ID (integer)
+Nurse ID (integer) - reference to Nurse table
+Patient ID (integer) - reference to Patient table
+Schedule Date (date)
+Schedule Time (time)
+Schedule Type (string)
+Schedule Description (string)
+Notes (string)
+
+Class: Facility
+Properties:
+
+Facility ID (integer)
+Facility Name (string)
+Facility Type (string)
+Facility Address (string)
+Facility Phone Number (string)
+Facility Email Address (string)
+Facility Description (string)
+Notes (string)
+
+Class: FacilitySchedule
+Properties:
+
+Facility Schedule ID (integer)
+Facility ID (integer) - reference to Facility table
+Schedule Date (date)
+Schedule Time (time)
+Schedule Type (string)
+Schedule Description (string)
+Notes (string)
+
+
+

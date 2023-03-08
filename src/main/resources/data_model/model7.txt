@@ -1,0 +1,61 @@
+Sure, here are even more tables and properties for a hospital management system:
+
+Class: Insurance
+Properties:
+
+Insurance ID (integer)
+Insurance Name (string)
+Insurance Type (string)
+Insurance Phone Number (string)
+Insurance Email Address (string)
+Insurance Description (string)
+Notes (string)
+Class: Claim
+Properties:
+
+Claim ID (integer)
+Patient ID (integer)
+Insurance ID (integer) - reference to Insurance table
+Claim Date (date)
+Claim Time (time)
+Claim Amount (float)
+Claim Status (string)
+Claim Description (string)
+Notes (string)
+Class: Pharmacy
+Properties:
+
+Pharmacy ID (integer)
+Pharmacy Name (string)
+Pharmacy Type (string)
+Pharmacy Address (string)
+Pharmacy Phone Number (string)
+Pharmacy Email Address (string)
+Pharmacy Description (string)
+Notes (string)
+Class: Medication
+Properties:
+
+Medication ID (integer)
+Medication Name (string)
+Medication Type (string)
+Medication Description (string)
+Notes (string)
+Class: MedicationOrder
+Properties:
+
+Medication Order ID (integer)
+Patient ID (integer)
+Doctor ID (integer)
+Medication ID (integer) - reference to Medication table
+Prescription ID (integer) - reference to Prescription table
+Medication Order Date (date)
+Medication Order Time (time)
+Medication Dosage (string)
+Medication Frequency (string)
+Medication Start Date (date)
+Medication End Date (date)
+Medication Order Status (string)
+Medication Order Description (string)
+Notes (string)
+In this expanded schema, we have added more tables and properties to capture additional information about insurance, claims, pharmacies, medications, and medication orders. For example, the Insurance table includes properties like Insurance Type and Insurance Description, while the Claim table includes properties like Claim Amount and Claim Description. The Pharmacy table includes properties like Pharmacy Type and Pharmacy Description, while the Medication table includes properties like Medication Type and Medication Description. The MedicationOrder table includes properties like Medication Dosage, Medication Frequency, Medication Start Date, and Medication End Date. These tables and properties help ensure that all relevant information is captured and easily accessible for healthcare professionals in the hospital management system.

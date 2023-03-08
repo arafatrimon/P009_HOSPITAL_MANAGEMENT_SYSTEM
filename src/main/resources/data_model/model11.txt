@@ -1,0 +1,133 @@
+Sure, here are some additional tables and data for a hospital management system:
+
+Class: Room
+Properties:
+
+Room ID (integer)
+Room Type (string)
+Room Number (integer)
+Bed Count (integer)
+Notes (string)
+
+Example Data:
+Room ID: 1
+Room Type: Private
+Room Number: 101
+Bed Count: 1
+Notes: N/A
+
+Room ID: 2
+Room Type: Semi-Private
+Room Number: 102
+Bed Count: 2
+Notes: N/A
+
+Room ID: 3
+Room Type: Ward
+Room Number: 103
+Bed Count: 10
+Notes: N/A
+
+Class: AppointmentType
+Properties:
+
+Appointment Type ID (integer)
+Appointment Type Name (string)
+Appointment Type Duration (integer)
+Appointment Type Description (string)
+Notes (string)
+
+Example Data:
+Appointment Type ID: 1
+Appointment Type Name: General Checkup
+Appointment Type Duration: 30
+Appointment Type Description: A routine checkup to ensure the patient's overall health is good.
+Notes: N/A
+
+Appointment Type ID: 2
+Appointment Type Name: Blood Test
+Appointment Type Duration: 60
+Appointment Type Description: A test to analyze the patient's blood samples.
+Notes: N/A
+
+Appointment Type ID: 3
+Appointment Type Name: MRI Scan
+Appointment Type Duration: 120
+Appointment Type Description: A test to produce detailed images of the patient's internal organs and tissues.
+Notes: N/A
+
+Class: Surgery
+Properties:
+
+Surgery ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Surgery Date (date)
+Surgery Time (time)
+Surgery Type (string)
+Surgery Description (string)
+Notes (string)
+
+Example Data:
+Surgery ID: 1
+Patient ID: 2
+Doctor ID: 3
+Surgery Date: 2023-03-01
+Surgery Time: 10:00:00
+Surgery Type: Appendectomy
+Surgery Description: A surgery to remove the appendix.
+Notes: N/A
+
+Surgery ID: 2
+Patient ID: 4
+Doctor ID: 2
+Surgery Date: 2023-03-03
+Surgery Time: 14:00:00
+Surgery Type: Knee Replacement
+Surgery Description: A surgery to replace the damaged knee joint with a prosthetic.
+Notes: N/A
+
+Class: TestResult
+Properties:
+
+Test Result ID (integer)
+LabTest ID (integer) - reference to LabTest table
+Test Result Date (date)
+Test Result Time (time)
+Test Result Value (string)
+Test Result Status (string)
+Test Result Description (string)
+Notes (string)
+
+Example Data:
+Test Result ID: 1
+LabTest ID: 1
+Test Result Date: 2023-02-25
+Test Result Time: 16:00:00
+Test Result Value: Negative
+Test Result Status: Final
+Test Result Description: A test result to determine if the patient has COVID-19.
+Notes: N/A
+
+Test Result ID: 2
+LabTest ID: 2
+Test Result Date: 2023-03-01
+Test Result Time: 10:00:00
+Test Result Value: Positive
+Test Result Status: Preliminary
+Test Result Description: A test result to determine if the patient has a bacterial infection.
+Notes: N/A
+
+Class: Procedure
+Properties:
+
+Procedure ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Procedure Date (date)
+Procedure Time (time)
+Procedure Type (string)
+Procedure Description (string)
+Notes (string)
+
+Example

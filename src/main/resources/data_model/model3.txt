@@ -1,0 +1,125 @@
+Here's an even more detailed hospital management system schema with additional tables and properties:
+
+Class: Patient
+Properties:
+
+Patient ID (integer)
+First Name (string)
+Last Name (string)
+Date of Birth (date)
+Gender (string)
+Phone Number (string)
+Email Address (string)
+Address (string)
+Emergency Contact Name (string)
+Emergency Contact Phone Number (string)
+Insurance Provider (string)
+Insurance Policy Number (string)
+Class: Doctor
+Properties:
+
+Doctor ID (integer)
+First Name (string)
+Last Name (string)
+Specialty (string)
+Phone Number (string)
+Email Address (string)
+Address (string)
+Class: Appointment
+Properties:
+
+Appointment ID (integer)
+Patient ID (integer)
+Doctor ID (integer)
+Appointment Date (date)
+Appointment Time (time)
+Appointment Reason (string)
+Appointment Status (string)
+Appointment Type (string)
+Appointment Duration (integer)
+Notes (string)
+Class: Prescription
+Properties:
+
+Prescription ID (integer)
+Patient ID (integer)
+Doctor ID (integer)
+Medication Name (string)
+Dosage (string)
+Frequency (string)
+Duration (string)
+Prescription Date (date)
+Prescription Status (string)
+Notes (string)
+Class: Staff
+Properties:
+
+Staff ID (integer)
+First Name (string)
+Last Name (string)
+Position (string)
+Phone Number (string)
+Email Address (string)
+Address (string)
+Hire Date (date)
+Salary (float)
+Class: Department
+Properties:
+
+Department ID (integer)
+Department Name (string)
+Department Head (integer) - reference to Staff table
+Department Phone Number (string)
+Department Email Address (string)
+Department Description (string)
+Class: Ward
+Properties:
+
+Ward ID (integer)
+Ward Name (string)
+Ward Capacity (integer)
+Ward Type (string)
+Ward Status (string)
+Ward Description (string)
+Class: Bed
+Properties:
+
+Bed ID (integer)
+Ward ID (integer)
+Bed Number (string)
+Bed Status (string)
+Bed Type (string)
+Bed Description (string)
+Class: Test
+Properties:
+
+Test ID (integer)
+Patient ID (integer)
+Test Name (string)
+Test Result (string)
+Test Date (date)
+Test Type (string)
+Test Description (string)
+Class: Billing
+Properties:
+
+Billing ID (integer)
+Patient ID (integer)
+Billing Date (date)
+Total Amount (float)
+Amount Paid (float)
+Payment Method (string)
+Billing Type (string)
+Billing Description (string)
+Class: Procedure
+Properties:
+
+Procedure ID (integer)
+Patient ID (integer)
+Doctor ID (integer)
+Procedure Name (string)
+Procedure Date (date)
+Procedure Type (string)
+Procedure Status (string)
+Procedure Description (string)
+In this expanded schema, we have added even more tables and properties to capture additional information about appointments, prescriptions, staff, departments, wards, beds, tests, billing, and procedures. For example, the Appointment table includes properties like Appointment Type, Appointment Duration, and Notes, while the Prescription table includes properties like Notes. The Staff table now includes properties like Hire Date and Salary. The Department and Ward tables now include properties like Department Description and Ward Description. The Bed table now includes properties like Bed Type and Bed Description. The Test table now includes properties like Test Type and Test Description. Finally, the Billing table includes properties like Billing Type and Billing Description, while the Procedure table includes properties like Procedure Type, Procedure Status, and Procedure Description.

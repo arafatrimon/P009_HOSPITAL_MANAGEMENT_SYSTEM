@@ -1,0 +1,74 @@
+Sure, here are even more tables and properties for a hospital management system:
+
+Class: Facility
+Properties:
+
+Facility ID (integer)
+Facility Name (string)
+Facility Type (string)
+Address (string)
+Phone Number (string)
+Email Address (string)
+Facility Description (string)
+Class: Room
+Properties:
+
+Room ID (integer)
+Room Number (string)
+Room Type (string)
+Room Capacity (integer)
+Room Status (string)
+Room Description (string)
+Facility ID (integer) - reference to Facility table
+Class: Admittance
+Properties:
+
+Admittance ID (integer)
+Patient ID (integer)
+Admittance Date (date)
+Admittance Time (time)
+Room ID (integer) - reference to Room table
+Admittance Type (string)
+Admittance Status (string)
+Discharge Date (date)
+Discharge Time (time)
+Discharge Reason (string)
+Discharge Status (string)
+Notes (string)
+Class: Surgery
+Properties:
+
+Surgery ID (integer)
+Patient ID (integer)
+Doctor ID (integer)
+Surgery Date (date)
+Surgery Time (time)
+Surgery Type (string)
+Surgery Status (string)
+Surgery Description (string)
+Room ID (integer) - reference to Room table
+Notes (string)
+Class: Diagnosis
+Properties:
+
+Diagnosis ID (integer)
+Patient ID (integer)
+Doctor ID (integer)
+Diagnosis Date (date)
+Diagnosis Time (time)
+Diagnosis Type (string)
+Diagnosis Status (string)
+Diagnosis Description (string)
+Notes (string)
+Class: MedicalRecord
+Properties:
+
+Medical Record ID (integer)
+Patient ID (integer)
+Doctor ID (integer)
+Medical Record Type (string)
+Medical Record Date (date)
+Medical Record Time (time)
+Medical Record Description (string)
+Notes (string)
+In this expanded schema, we have added more tables and properties to capture additional information about hospital facilities, admittance, surgeries, diagnosis, and medical records. For example, the Facility table includes properties like Facility Type and Facility Description, while the Room table includes properties like Room Capacity, Room Status, and Room Description. The Admittance table includes properties like Admittance Type, Admittance Status, Discharge Date, Discharge Time, and Discharge Reason, while the Surgery table includes properties like Surgery Type and Surgery Description. The Diagnosis table includes properties like Diagnosis Type and Diagnosis Description, while the MedicalRecord table includes properties like Medical Record Type and Medical Record Description. These tables and properties help ensure that all relevant information is captured and easily accessible for healthcare professionals in the hospital management system.

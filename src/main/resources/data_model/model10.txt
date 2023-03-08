@@ -1,0 +1,162 @@
+Sure, here are some additional classes and properties for the hospital management system schema:
+
+Class: Surgery
+Properties:
+
+Surgery ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Surgery Date (date)
+Surgery Time (time)
+Surgery Type (string)
+Surgery Description (string)
+Surgery Status (string)
+Notes (string)
+
+Class: Ward
+Properties:
+
+Ward ID (integer)
+Ward Name (string)
+Ward Type (string)
+Capacity (integer)
+Occupied Beds (integer)
+Available Beds (integer)
+Notes (string)
+
+Class: Bed
+Properties:
+
+Bed ID (integer)
+Ward ID (integer) - reference to Ward table
+Patient ID (integer) - reference to Patient table
+Bed Number (string)
+Bed Status (string)
+Notes (string)
+
+Class: Inventory
+Properties:
+
+Inventory ID (integer)
+Item Name (string)
+Item Type (string)
+Item Description (string)
+Item Quantity (integer)
+Item Price (float)
+Notes (string)
+
+Class: Supplier
+Properties:
+
+Supplier ID (integer)
+Supplier Name (string)
+Supplier Type (string)
+Supplier Address (string)
+Supplier Phone Number (string)
+Supplier Email Address (string)
+Supplier Description (string)
+Notes (string)
+
+Class: PurchaseOrder
+Properties:
+
+Purchase Order ID (integer)
+Supplier ID (integer) - reference to Supplier table
+Inventory ID (integer) - reference to Inventory table
+Order Date (date)
+Order Time (time)
+Order Quantity (integer)
+Order Status (string)
+Order Description (string)
+Notes (string)
+
+Class: Payment
+Properties:
+
+Payment ID (integer)
+Patient ID (integer) - reference to Patient table
+Payment Date (date)
+Payment Time (time)
+Payment Amount (float)
+Payment Method (string)
+Payment Status (string)
+Payment Description (string)
+Notes (string)
+
+
+Sure, here are some additional classes and properties for a hospital management system schema:
+
+Class: Surgery
+Properties:
+
+Surgery ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Surgery Date (date)
+Surgery Time (time)
+Surgery Description (string)
+Surgery Status (string)
+Notes (string)
+Class: ImagingTest
+Properties:
+
+Imaging Test ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Imaging Test Date (date)
+Imaging Test Time (time)
+Imaging Test Type (string)
+Imaging Test Result (string)
+Imaging Test Status (string)
+Imaging Test Description (string)
+Notes (string)
+Class: Equipment
+Properties:
+
+Equipment ID (integer)
+Equipment Name (string)
+Equipment Type (string)
+Equipment Manufacturer (string)
+Equipment Model (string)
+Equipment Serial Number (string)
+Equipment Purchase Date (date)
+Equipment Purchase Price (float)
+Equipment Description (string)
+Notes (string)
+Class: Facility
+Properties:
+
+Facility ID (integer)
+Facility Name (string)
+Facility Type (string)
+Facility Address (string)
+Facility Phone Number (string)
+Facility Email Address (string)
+Facility Description (string)
+Notes (string)
+Class: Admission
+Properties:
+
+Admission ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Admit Date (date)
+Admit Time (time)
+Discharge Date (date)
+Discharge Time (time)
+Admission Reason (string)
+Admission Diagnosis (string)
+Admission Status (string)
+Notes (string)
+Class: DischargeSummary
+Properties:
+
+Discharge Summary ID (integer)
+Patient ID (integer) - reference to Patient table
+Doctor ID (integer) - reference to Doctor table
+Discharge Summary Date (date)
+Discharge Summary Time (time)
+Discharge Summary Description (string)
+Notes (string)
+
+
